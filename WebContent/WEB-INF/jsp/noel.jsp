@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ include file="/WEB-INF/jsp/include.jsp"%>
 <c:url var="commande" value="/actions/cadeaux/commande"></c:url>
 <c:url var="edit" value="/actions/cadeaux/edit" />
 <c:url var="supp" value="/actions/cadeaux/supp" />
+
 
 <html>
 <head>
@@ -15,8 +16,8 @@
 </head>
 <body>
 	<h1>Bienvenue dans notre application</h1>
-	<h1>La liste des produits</h1>
 	<c:if test="${auth != null}">
+		<h2>Espace Responsable :</h2>
 		<table border="1">
 			<tr>
 				<td>ID</td>
@@ -41,6 +42,7 @@
 			Ajouter Produit</button>
 	</c:if>
 	<c:if test="${auth == null}">
+			<h2>Espace Clients :</h2>
 		<table border="1">
 			<tr>
 				<td>ID</td>

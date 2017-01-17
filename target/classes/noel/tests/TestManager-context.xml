@@ -10,22 +10,16 @@
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
 
-	<context:component-scan base-package="noel.model" />
-	<context:component-scan base-package="noel.business" />
 	<context:component-scan base-package="noel.tests" />
+	<context:component-scan base-package="noel.business" />
 
 	<!-- Initialization for data source -->
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3307/noel" />
+		<property name="url" value="jdbc:mysql://localhost:3307/noel_test" />
 		<property name="username" value="root" />
 		<property name="password" value="" />
-	</bean>
-
-	<!-- Definition for Manager bean -->
-	<bean id="Manager" class="noel.business.Manager">
-		<property name="dataSource" ref="dataSource" />
 	</bean>
 
 </beans>

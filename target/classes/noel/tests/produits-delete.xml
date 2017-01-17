@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset name="noel">
+	<produits ID_Prod="1" Nom_Prod="GO-Pro" Prix_Prod="2250"
+		Qt_Prod="2" />
+	<produits ID_Prod="2" Nom_Prod="Drone Parrot" Prix_Prod="1000"
+		Qt_Prod="2" />
+</dataset> 

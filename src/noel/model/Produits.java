@@ -20,9 +20,8 @@ public class Produits {
 		this.qtProd = qtProd;
 	}
 
-	Produits(long idProd, String nom, long prix, long qtProd) {
+	public Produits(String nom, long prix, long qtProd) {
 		super();
-		this.idProd = idProd;
 		this.nom = nom;
 		this.prix = prix;
 		this.qtProd = qtProd;

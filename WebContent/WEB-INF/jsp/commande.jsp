@@ -27,9 +27,7 @@
 				<td><span style="font-weight: bold">Quantité :</span></td>
 				
 				<td><input name="qtCom" />
-				<input type="text"  id="idProd" name="idProd" value="${produit.idProd}" />
-				<input type="text" id="oldqt" name="oldqt" value="${produit.qtProd}" /> 
- 				<input type="text" id="oldprice" name="oldprice" value="${produit.prix}" /></td>
+				<input type="hidden"  id="idProd" name="idProd" value="${produit.idProd}" /></td>
 				
 			</tr>
 		
